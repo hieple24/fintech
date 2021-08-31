@@ -216,15 +216,4 @@ output_path = Path("inexpensive_loans.csv")
 # and each row of `loan.values()` from the `inexpensive_loans` list.
 #with open(csvpath, 'w', newline='') as csvfile:
 
-csvpath = Path("my_output.csv")
-with open(csvpath, 'w', newline='') as csvfile:
-    csvwriter = csv.writer(csvfile)
-    my_dictionary = {"loan_price": 200, "loan_price": 500}
-    a_list_of_dictionary_values = my_dictionary.values()
-    print(a_list_of_dictionary_values)
-    for row in data:
-        csvwriter.writerow(row.values())
-  
-
- 
 
