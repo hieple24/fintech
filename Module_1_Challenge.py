@@ -216,4 +216,10 @@ output_path = Path("inexpensive_loans.csv")
 # and each row of `loan.values()` from the `inexpensive_loans` list.
 #with open(csvpath, 'w', newline='') as csvfile:
 
+with open(csvpath, "w") as csvfile:
+    csvwriter = csv.writer(csvfile, delimiter=",")
+    csvwriter.writerow(header)
+    for item in inexpensive_loans:
+        csvwriter.writerow(item.values())
+
 
